@@ -44,6 +44,15 @@ h1, h2, h3, .logo, .badge, .nav-links a, .resume {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+    font-size: 1.25rem;
+}
+
 .logo {
     color: #0f172a;
 }
@@ -279,6 +288,13 @@ img:hover {
     margin-bottom: 16px;
 }
 
+.project-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    justify-content: center;
+}
+
 .case-study-btn {
     color: #6366f1;
     font-size: 1rem;
@@ -369,4 +385,64 @@ footer a {
     font-weight: 600;
     color: #64748b;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        border: 1px solid #c7c4d8;
+        border-radius: 20px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .resume {
+        display: none;
+    }
+
+    .landing {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+        min-height: auto;
+    }
+
+    .landing-text h1 {
+        font-size: 2rem;
+    }
+
+    .photo img {
+        width: 220px;
+        height: 220px;
+    }
+
+    section {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .stack-grid-se,
+    .stack-grid-svcs,
+    .stack-grid-prjcts {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }

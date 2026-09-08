@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283618" />
+      <stop offset="100%" stop-color="#1b2510" />
+    </linearGradient>
+
+    <!-- Card Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="450" rx="28" fill="url(#bgGrad)" />
+
+  <!-- Subtle Pattern / Grid Lines -->
+  <circle cx="100" cy="80" r="180" fill="#606c38" opacity="0.15" />
+  <circle cx="720" cy="380" r="220" fill="#606c38" opacity="0.12" />
+
+  <!-- Main Showcase Container -->
+  <rect x="70" y="60" width="660" height="330" rx="24" fill="#fefae0" filter="url(#cardShadow)" stroke="#606c38" stroke-width="3"/>
+
+  <!-- Top Badge / Header Text -->
+  <rect x="290" y="85" width="220" height="40" rx="20" fill="#283618" />
+  <text x="400" y="111" fill="#dda15e" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="3" text-anchor="middle">THE ARENA</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="155" fill="#283618" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="800" text-anchor="middle">ROCK • PAPER • SCISSORS</text>
+
+  <!-- Interactive Fighter Slots (Visual Mockup) -->
+  
+  <!-- Left Tile: Rock -->
+  <g transform="translate(140, 190)">
+    <rect width="120" height="120" rx="24" fill="#fefae0" stroke="#dda15e" stroke-width="3" filter="url(#cardShadow)"/>
+    <text x="60" y="78" font-size="52" text-anchor="middle">✊</text>
+    <text x="60" y="145" fill="#283618" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">ROCK</text>
+  </g>
+
+  <!-- Center Tile: Paper -->
+  <g transform="translate(340, 190)">
+    <rect width="120" height="120" rx="24" fill="#fefae0" stroke="#bc6c25" stroke-width="3" filter="url(#cardShadow)"/>
+    <text x="60" y="78" font-size="52" text-anchor="middle">🖐️</text>
+    <text x="60" y="145" fill="#bc6c25" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">PAPER</text>
+  </g>
+
+  <!-- Right Tile: Scissors -->
+  <g transform="translate(540, 190)">
+    <rect width="120" height="120" rx="24" fill="#fefae0" stroke="#dda15e" stroke-width="3" filter="url(#cardShadow)"/>
+    <text x="60" y="78" font-size="52" text-anchor="middle">✌️</text>
+    <text x="60" y="145" fill="#283618" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">SCISSORS</text>
+  </g>
+</svg>
