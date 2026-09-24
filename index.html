@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPortfolio</title>
+    <title>Ibrahim Musa Zubairu | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -212,6 +212,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="stack-card project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80"
+                            alt="Marginalia Booksellers Preview">
+                    </div>
+                    <div class="project-body">
+                        <div class="aaa">
+                            <span>Tailwind CSS v4</span>
+                            <span>Responsive Layout</span>
+                            <span>Editorial UI</span>
+                        </div>
+                        <h3>Marginalia Booksellers</h3>
+                        <p>A bespoke, typography-driven e-commerce landing page for an antiquarian bookshop. Designed
+                            with a warm parchment aesthetic, curated typography pairing (EB Garamond &amp; Courier
+                            Prime), and custom editorial grid layouts.</p>
+                        <div class="project-actions">
+                            <a href="https://marginalia-bookstore-beta.vercel.app/" target="_blank"
+                                class="case-study-btn">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
@@ -260,15 +282,15 @@
             navMenu.classList.toggle('active')
             const icon = menuToggle.querySelector('i')
             if (navMenu.classList.contains('active')) {
-                icon.classList.replace('fa-bars' , 'fa-xmark')
+                icon.classList.replace('fa-bars', 'fa-xmark')
             } else {
-                icon.classList.replace('fa-xmark' , 'fa-bars')
+                icon.classList.replace('fa-xmark', 'fa-bars')
             }
         })
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active')
-                menuToggle.querySelector('i').classList.replace('fa-xmark' , 'fa-bars')
+                menuToggle.querySelector('i').classList.replace('fa-xmark', 'fa-bars')
             })
         })
     </script>
